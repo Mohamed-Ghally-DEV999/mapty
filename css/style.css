@@ -194,13 +194,6 @@ a:visited {
   color: var(--color-light--1);
 }
 
-@media screen and (max-width: 800px) {
-  .copyright {
-    position: absolute;
-    bottom: -622px;
-  }
-}
-
 .twitter-link:link,
 .twitter-link:visited {
   color: var(--color-light--1);
@@ -222,7 +215,7 @@ a:visited {
 @media screen and (max-width: 800px) {
   #map {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 
 /* Popup width is defined in JS using options */
