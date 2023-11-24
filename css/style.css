@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: var(--color-light--2);
   font-weight: 400;
   line-height: 1.6;
@@ -33,6 +33,20 @@ body {
 
   display: flex;
 }
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-row-gap: 50px;
+    width: 100%;
+    display: block;
+    background-color: var(--color-dark--1);
+  }
+}
+
+
 
 /* GENERAL */
 a:link,
@@ -180,6 +194,13 @@ a:visited {
   color: var(--color-light--1);
 }
 
+@media screen and (max-width: 800px) {
+  .copyright {
+    position: absolute;
+    bottom: -622px;
+  }
+}
+
 .twitter-link:link,
 .twitter-link:visited {
   color: var(--color-light--1);
@@ -197,6 +218,12 @@ a:visited {
   height: 100%;
   background-color: var(--color-light--1);
 }
+
+@media screen and (max-width: 800px) {
+  #map {
+    width: 80%;
+    margin: 0 auto;
+  }
 
 /* Popup width is defined in JS using options */
 .leaflet-popup .leaflet-popup-content-wrapper {
